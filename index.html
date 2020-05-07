@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiforestilling OEG</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_forside.css">
+    <script src="message.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Velkommen til OEG's Multiforestilling</h1>
+      <p><em>Ørestad Gymnasiums kreative produktion, der hvert år vises på OEG efter måneders slid, slæb og sjov</em></p>
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">Forside</a>
+      <a href="billet_bestilling.html">Bestil billet</a>
+      <a href="om.html">Om Multiforestillingen</a>
+      <a href="galleri_forside.html">Billedgallerier</a>
+      <a id="medvirkende" onclick="document.getElementById('id04').style.display='block'" style="width:auto;">For medvirkende</a> <!denne del>
+    </div>
+
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/196701997" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+    <textarea id="w3mission" readonly>Kommende forestilling: xnavnx?
+
+Onsdag ......................................................................... 21. februar 2021
+Torsdag ......................................................................... 22. februar 2021
+Fredag ......................................................................... 23. februar 2021
+</textarea>
+
+<textarea id="ommulti" readonly> Om forestillingen
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae dolor sed quam porttitor commodo vitae vel arcu. Suspendisse accumsan dignissim mauris lacinia lobortis. Praesent volutpat egestas massa, id tincidunt est convallis quis. Aliquam eget maximus sapien. Vestibulum aliquam mi ac elementum porttitor. Sed ac neque sit amet orci venenatis tincidunt at nec tortor. Phasellus a magna eu felis mollis varius in in metus. Morbi eget metus sapien. Vivamus ut interdum lacus. Integer ac tempor nulla, id ultrices dui. Integer turpis ante, porttitor pellentesque consequat efficitur, malesuada in odio. Aenean pellentesque justo non tellus mattis porta. Vivamus ut ornare diam. Integer sit amet pharetra lorem. Cras eu ex mauris. Nam ut ligula augue. Quisque semper ipsum vel dapibus bibendum. Fusce ut mauris porta, scelerisque velit sit amet, tristique sem. Praesent odio turpis, gravida vitae fringilla eu, venenatis sit amet leo. Sed eleifend accumsan metus, nec finibus turpis mattis vitae. Morbi vel nunc at mauris interdum varius.
+</textarea>
+
+<form>
+  <button id=clickbutton type="submit" formaction="billet_bestilling.html">Bestil billet</button>
+</form>
+
+<div id="id04" class="modal1">
+  <form class="modal1-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="E5.jpg" alt="Avatar" class="avatar">
+    <form name="login">
+      <div class="container">
+        <form name="loginForm" method="post" action="login.php">
+        <table width="30%"  align="center">
+
+        <tr>
+        <td colspan=2 class="login"><b>Login</b></td>
+        </tr>
+
+        <tr>
+        <td class="bogstav">Username:</td>
+        <td><input type="text" size=25 name="userid"></td>
+        </tr>
+
+        <tr>
+        <td class="bogstav">Password:</td>
+        <td><input type="Password" size=25 name="pwd"></td>
+        </tr>
+
+        <tr>
+        <td><input class="button" type="submit" onclick="return check(this.form)" value="Login"></td>
+        </tr>
+
+        </table>
+        </form>
+    </div>
+
+    </form>
+
+</div>
+</div>
+<script type="text/javascript" src="javascript.js"></script>
+
+  </body>
+</html>

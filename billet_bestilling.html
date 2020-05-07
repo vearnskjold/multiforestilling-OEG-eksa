@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiforestilling OEG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="gg.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Velkommen til OEG's Multiforestilling</h1>
+    <p><em>Ørestad Gymnasiums kreative produktion, der hvert år vises på OEG efter måneders slid, slæb og sjov</em></p>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">Forside</a>
+    <a href="billet_bestilling.html">Bestil billet</a>
+    <a href="om.html">Om Multiforestillingen</a>
+    <a href="galleri_forside.html">Billedgallerier</a>
+    <a id="medvirkende" onclick="document.getElementById('id04').style.display='block'" style="width:auto;">For medvirkende</a>
+    </div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Onsdag</li>
+    <li class="grey">30 kr. stk</li>
+    <li><img src="E1.jpg" alt="Avatar" class="bcolumn"></li>
+    <li class="grey"><button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Køb billet</button></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Torsdag</li>
+    <li class="grey">30 kr. stk</li>
+    <li><img src="E5.jpg" alt="Avatar" class="bcolumn"></li>
+    <li class="grey"><button class="button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Køb billet</button></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Fredag</li>
+    <li class="grey">30 kr. stk</li>
+    <li><img src="E3.jpg" alt="Avatar" class="bcolumn"></li>
+    <li class="grey"><button class="button" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Køb billet</button></li>
+  </ul>
+</div>
+
+<!-- Pop up -->
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="E1.jpg" alt="Avatar" class="avatar">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8IMdPtbFDogRxsIKwqyJksFTIcUGP-HbnxbQgJFgrZFxaBA/viewform?embedded=true" width="640" height="704" frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
+        </div>
+    </div>
+</form>
+</div>
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="E5.jpg" alt="Avatar" class="avatar">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemYhblFhyMPj3P59CICOA9ga7Lbmp4EWjCSrWdKmWbjeNzAg/viewform?embedded=true" width="640" height="715" frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
+        </div>
+    </div>
+</form>
+</div>
+
+<div id="id03" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="E3.jpg" alt="Avatar" class="avatar">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgCAm46o4lzS-uzVlRwkMfmb1iJ19_Z-kar6Q8py3SwR7a0A/viewform?embedded=true" width="640" height="672" frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
+        </div>
+    </div>
+</form>
+</div>
+
+<div id="id04" class="modal1">
+  <form class="modal1-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="E5.jpg" alt="Avatar" class="avatar">
+    <form name="login">
+      <div class="container">
+        <form name="loginForm" method="post" action="login.php">
+        <table width="30%"  align="center">
+
+        <tr>
+        <td colspan=2 class="login"><b>Login</b></td>
+        </tr>
+
+        <tr>
+        <td class="bogstav">Username:</td>
+        <td><input type="text" size=25 name="userid"></td>
+        </tr>
+
+        <tr>
+        <td class="bogstav">Password:</td>
+        <td><input type="Password" size=25 name="pwd"></td>
+        </tr>
+
+        <tr>
+        <td><input class="button" type="submit" onclick="return check(this.form)" value="Login"></td>
+        </tr>
+
+        </table>
+        </form>
+    </div>
+
+    </form>
+
+</div>
+</div>
+<script type="text/javascript" src="javascript.js"></script>
+
+</script>
+
+</body>
+</html>
