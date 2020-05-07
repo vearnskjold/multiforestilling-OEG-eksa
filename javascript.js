@@ -20,7 +20,7 @@ window.onclick = function(event) {
 function check(form)
 {
 
-if(form.userid.value == "multi" && form.pwd.value == "2020")
+if(form.userid.value == "OEG" && form.pwd.value == "OEG")
 {
   window.open("FM.html");
 }
